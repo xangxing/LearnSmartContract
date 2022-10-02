@@ -1,1 +1,10 @@
+Simplest Form of Cryptocurrency
 
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity
+
+contract Coin {
+    address public minter;
+    mapping(address => uint) public balances;
+    
+    event sent(address from, address to, uint amount);
